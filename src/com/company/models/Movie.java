@@ -10,7 +10,7 @@ public class Movie {
     private Director director;
     private List<Cast> cast;
 
-    void printCast() {
+   public void printCast() {
         int counter = 1;
         for (Cast s : cast) {
             System.out.printf("%s)   Fullname: %s\n", counter, s.getFullName());
@@ -41,12 +41,12 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Movies{" +
-                "name='" + name + '\'' +
-                ", year=" + year +
-                ", description='" + description + '\'' +
-                ", director=" + director +
-                ", cast=" + cast +
-                '}';
+        return  "\n|_|-|_|-|_|-|_||_|-|_|-|_|-|_||_|-|_|-|_|-|_|-|_|-|_|-|_||_|-|_|-|_|-|_|" +
+                "\n     Movies " +
+                "\n name : " + name +
+                "\n year : " + year +
+                "\n description : " + description +
+                "\n director : " + director +
+                "\n cast : " + cast ;
     }
 }

@@ -1,16 +1,17 @@
 package com.company.services;
 
 import com.company.models.Director;
+import com.company.models.Movie;
 
-public interface SortAble {
+public interface SortAble{
 
     void printAllMovies();
 
-    void findMovie(String movieName);
+    void findMovie();
 
-    void sortByYear(int year);
+    void sortByYear();
 
-    void sortByName(String name);
+    void sortByName();
 
-    void sortByDirector(Director director);
+    void sortByDirector();
 }
